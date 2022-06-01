@@ -13,14 +13,18 @@
     'use strict'
     const url = [
         'https://raw.githubusercontent.com/UnrecognizedBR/Test-Vscode/master/public/letsGO.js',
+        'https://raw.githubusercontent.com/UnrecognizedBR/public/master/reconnect.js'
     ]
     for (const key in url) {
-        const data = await fetch( url[ key ] ).then(function(data) {
-            return data.blob()
-        })
-        const urlBlob = URL.createObjectURL(data)
-        let elem = document.createElement('script')
-        document.querySelector("body").append(elem)
-        elem.src = urlBlob
+        if ( ( location.host == 'tribalwars.com.br' && key == 1 ) 
+          || ( location.host != 'tribalwars.com.br' && key == 0 ) ) {
+            const data = await fetch( url[ key ] ).then(function(data) {
+                return data.blob()
+            })
+            const urlBlob = URL.createObjectURL(data)
+            let elem = document.createElement('script')
+            document.querySelector("body").append(elem)
+            elem.src = urlBlob    
+        }
     }
 })();
