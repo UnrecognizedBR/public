@@ -3,7 +3,7 @@
 // @description  Troca de aldeia e navega entre as páginas farm, scavenge, main(principal) e chegando.
 // @author       Clezio Marcos
 // @match        https://*.tribalwars.com.br/game.php*
-// @include      https://tribalwars.com.br/*
+// @include      https://www.tribalwars.com.br/
 // @exclude      https://brs1.tribalwars.com.br/game.php*
 // @icon         https://www.vemtranquilo.host/VT/ÍCONES-GIFS/VEM TRANQUILO.jpg
 // @grant        none
@@ -16,8 +16,8 @@
         'https://raw.githubusercontent.com/UnrecognizedBR/public/master/reconnect.js'
     ]
     for (const key in url) {
-        if ( ( location.host == 'tribalwars.com.br' && key == 1 ) 
-          || ( location.host != 'tribalwars.com.br' && key == 0 ) ) {
+        if ( ( location.host == 'www.tribalwars.com.br' && key == 1 ) 
+          || ( location.host != 'www.tribalwars.com.br' && key == 0 ) ) {
             const data = await fetch( url[ key ] ).then(function(data) {
                 return data.blob()
             })
