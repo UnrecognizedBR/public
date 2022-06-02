@@ -3,7 +3,7 @@
 // @version      1.0.5
 // @description  Troca de aldeia e navega entre as páginas farm, scavenge, main(principal) e chegando.
 // @author       Clezio Marcos
-// @match        https://br112.tribalwars.com.br/game.php*
+// @match        https://**.tribalwars.com.br/game.php*
 // @match        https://www.tribalwars.com.br/
 // @exclude      https://brs1.tribalwars.com.br/game.php*
 // @icon         https://www.vemtranquilo.host/VT/ÍCONES-GIFS/VEM TRANQUILO.jpg
