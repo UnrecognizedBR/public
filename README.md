@@ -1,4 +1,6 @@
 # public
 
-Baixar o arquivo tamper e instalar no tampermonkey
+Para instalar...
+
+Copiar o arquivo tamper.js e colar no tampermonkey.
 
