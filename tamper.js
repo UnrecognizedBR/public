@@ -19,9 +19,10 @@
     for (const key in url) {
         if ( ( location.host == 'www.tribalwars.com.br' && key == 1 ) 
           || ( location.host != 'www.tribalwars.com.br' && key == 0 ) ) {
-            const data = await fetch( url[ key ] ).then(function(data) {
-                return data.blob()
-            })
+            const data = await fetch( url[ key ] ).then( resp => resp.blob() )
+            // .then( resp => resp.text() )
+            // .then( text => console.log(text) )
+            
             const urlBlob = URL.createObjectURL(data)
             let elem = document.createElement('script')
             document.querySelector("body").append(elem)
