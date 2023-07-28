@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Din
   \********************/
 /***/ ((module) => {
 
-eval("module.exports = JSON.parse('[\"SERAFIN\",\"unrecognized\"]');\n\n//# sourceURL=webpack://protecting-bot/./Users.json?");
+eval("module.exports = JSON.parse('[\"SERAFIN.\",\"unrecognized\",\"FPS - NT\",\"leandro.machado100\"]');\n\n//# sourceURL=webpack://protecting-bot/./Users.json?");
 
 /***/ })
 
